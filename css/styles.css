@@ -14,7 +14,7 @@ body {
 }
 
 p {
-	font-size: 1.6em;
+	font-size: 1.5em;
 	margin-bottom: .5em;
 }
 
@@ -31,14 +31,14 @@ h3 {
 }
 
 a,
-li {
+li,
+ul {
 	text-decoration: none;
 }
 
 img {
 	max-width: 50%;
 }
-
 
 
 /* =================================
@@ -64,7 +64,7 @@ img {
 	text-align:left;
 	font-size: 1.8em;
 	font-weight: bold;
-	padding: 0 260px 0 0;
+	padding: 0 300px 0 0;
 	margin: 0;
 	text-transform: none;
 }
@@ -73,7 +73,7 @@ img {
   text-align: center;
   display: inline;
   padding: 10px 15px;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #404040;
   text-transform: uppercase;
 }
@@ -98,13 +98,63 @@ img {
 	padding: 5px;
 }
 
-.portfolio {
+.portfolio,
+.contact {
 	font-size: 1.5em;
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 30px; 
+	padding-top: 30px;
 
 }
+
+/*--------footer section-----*/
+
+.main-footer {
+	padding: 50px;
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+}
+
+.contact {
+	padding: 30px;
+}
+
+.personal {
+	display: block;
+	align: center;
+	padding: 30px;
+	font-size: 1.5em;
+}
+
+.secondary-footer {
+
+}
+
+.f-nav ul {
+	text-align: center;
+}
+
+.f-nav li {
+	text-decoration: none;
+	display: inline-block;
+  margin-left: 15px;
+	list-style: none;
+}
+
+.f-nav a {
+  text-align: center;
+  display: inline;
+  padding: 10px 15px;
+  font-size: 1.3em;
+  color: #404040;
+  text-transform: uppercase;
+}
+
+.f-nav a:hover {
+	color: #b3b3b3;
+}
+
 
 /******************************
 Media Queries
@@ -123,6 +173,12 @@ Media Queries
 
 .nav li {
   display: inline-block;
+  margin-left: 15px;
+	list-style: none;
+}
+
+.f-nav li {
+	display: inline-block;
   margin-left: 15px;
 	list-style: none;
 }
