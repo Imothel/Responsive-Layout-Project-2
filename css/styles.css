@@ -77,6 +77,17 @@ footer-nav {
 	color: #b3b3b3;
 }
 
+.nav li {
+  display: inline-block;
+  margin-left: 15px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav {
+  float: right;
+}
+
 .feat-img {
   width: 50%;
   float: right;
@@ -112,6 +123,33 @@ footer-nav {
 	margin-left: inherit;
 	max-width: 100%;
 }
+
+.flex {
+  max-width: 33%;
+	padding: 5px;
+}
+
+.flex figcaption {
+	text-align: center;
+	font-size: 1.2em;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.flex img {
+	max-width: 90%;
+	margin-left: 25px;
+}
+
+.flex-container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /*--------footer section-----*/
 
 .main-footer {
@@ -137,16 +175,6 @@ Media Queries
 
 @media screen and (min-width: 768px) {
 
-.nav {
-  float: right;
-}
-
-.nav li {
-  display: inline-block;
-  margin-left: 15px;
-	list-style: none;
-	text-decoration: none;
-}
 
 /* ---- Float clearfix ---- */
 
@@ -156,31 +184,17 @@ Media Queries
   clear: both;
 }
 
-.flex {
-  max-width: 33%;
-	padding: 5px;
-}
-
-.flex figcaption {
-	text-align: center;
-	font-size: 1.2em;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.flex img {
-	max-width: 90%;
-	margin-left: 25px;
-}
-
-@media screen and (min-width: 1024px) {
 .container {
     width: 90%;
 		margin: 0 auto;
 }
 
+
+@media screen and (min-width: 320px) {
+
+
 .portfolio {
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 .main-container {
@@ -188,13 +202,5 @@ Media Queries
 	background-color: white;
 	justify-content: center;
 	margin: 0 auto;
-}
-
-.flex-container {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-flow: row wrap;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: nowrap;
 }
