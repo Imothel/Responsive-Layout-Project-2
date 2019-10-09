@@ -144,29 +144,6 @@ figure {
 
 }
 
-.f-nav ul {
-	text-align: center;
-}
-
-.f-nav li {
-	text-decoration: none;
-	display: inline-block;
-  margin-left: 15px;
-	list-style: none;
-}
-
-.f-nav a {
-  text-align: center;
-  display: inline;
-  padding: 10px 15px;
-  font-size: 1.3em;
-  color: #404040;
-  text-transform: uppercase;
-}
-
-.f-nav a:hover {
-	color: #b3b3b3;
-}
 
 
 /******************************
@@ -183,12 +160,6 @@ Media Queries
 
 .nav li {
   display: inline-block;
-  margin-left: 15px;
-	list-style: none;
-}
-
-.f-nav li {
-	display: inline-block;
   margin-left: 15px;
 	list-style: none;
 }
