@@ -1,54 +1,53 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Responsive Design</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/styles.css">
+      <meta charset="utf-8">
+      <title>Responsive Design</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/styles.css">
     </head>
 
-    <body>
+<body>
 
-    <header class="header">
-      <div class="container clearfix">
-  		<h1 id="home" class="name">Edith Raie</h1>
-  		<ul class="nav">
-  			<li><a href="#home">Home</a></li>
+  <header class="main-header">
+  		<h1 id="top1" class="name"><a href="#">Edith Raie</a></h1>
+  		<ul class="main-nav">
+  			<li><a href="#">Home</a></li>
   			<li><a href="#portfolio">Portfolio</a></li>
   			<li><a href="#footer">Contact</a></li>
   		</ul>
-      </div>
-  	</header>
+  </header>
 
-    <div>
-      <div class="container clearfix">
-      <img src="images/responsive-layout-profile.png" alt="Pic of me" class="feat-img">
-      <p>Hi! I'm a front end developer who loves responsive design and css. I recently finished learning front-end development at Treehouse and am exited to put all my skills to use!</p>
-      </div>
+
+    <div class="banner">
+      <figure>
+       <figcaption>
+       <img class="feat-img" src="images/responsive-layout-profile.png" alt="Pic of me">
+       <p>Hi! I'm a front end developer who loves responsive design and css. I recently finished learning front-end development at Treehouse and I am exited to put all my skills to use!</p>
+       </figcaption>
+      </figure>
     </div>
+
 
     <!--/.columns-->
 
-<div class="main-container">
-  <figure>
-    <figcaption>
-      <div id="portfolio" class="portfolio"><strong>Portfolio</strong></div>
-    </figcaption>
-    </figure>
+    <div class="container">
+      <div id="portfolio" class="portfolio">Portfolio</div>
+    </div>
 
-      <div class="flex-container">
-        <section class="flex">
+    <div class="container">
+        <section class="col">
            <img src="images/portfolio-1.png" alt="Marketing Image">
            <figure>
             <figcaption>
               <h2>Marketing Page</h2>
-    					This project shows a front page of marketing website meant for a specific business im interested in.
+    					This project shows a front page of marketing website meant for a specific business i'm interested in.
     				</figcaption>
             </figure>
         </section>
 
-      <section class="flex">
+      <section class="col">
           <img src="images/portfolio-2.png" alt="Search Image">
           <figure>
              <figcaption>
@@ -58,7 +57,7 @@
             </figure>
          </section>
 
-      <section class="flex">
+      <section class="col">
             <img src="images/portfolio-3.png" alt="Travel App">
             <figure>
           		 <figcaption>
@@ -68,64 +67,63 @@
               </figure>
            </section>
 
-        <section class="flex">
-          <img src="images/portfolio-4.png" alt="Map of favorite sports">
+        <section class="col">
+          <img src="images/portfolio-4.png" alt="Map of favorite spots">
           <figure>
             <figcaption>
-              <h2>Search Page</h2>
-                This project searches through a specific database to find information that the user is tryig to look up.<!--/.secondary-->
+              <h2>Map of favorite spots</h2>
+                This project uses mapping apis to plot points from my favorite spots in the city for a do-it-yourself walking tour.<!--/.secondary-->
               </figcaption>
               </figure>
            </section>
 
-      	<section class="flex">
+      	<section class="col">
           <img src="images/portfolio-5.png" alt="Photo Gallery">
           <figure>
       			<figcaption>
-              <h2>Marketing Page</h2>
-      					This project shows a front page of marketing website meant for a specific business im interested in.
+              <h2>Photo Gallery</h2>
+      					This project shows pictures from a recet trip to the viewer and allows them to easily navigate through photos.
       				</figcaption>
               </figure>
            </section>
 
-          <section class="flex">
+          <section class="col">
             <img src="images/portfolio-6.png" alt="Calculator">
             <figure>
           		<figcaption>
-                <h2>Travel App</h2>
-          			This app compares travel times based on different transportation methods and tells you the best one.
+                <h2>Calculator</h2>
+          			Someone can enter in the numbers they want, and press the big blue button and get the results.
           		</figcaption>
             </figure>
              </section>
           </div>
-       </div>  <!--/.container-->
+    <!--/.container-->
 
-  <main-footer id="footer">
+  <footer id="footer">
     <div class="main-footer">
-      <div class="contact"><strong>Contact</strong>
-      </div>
+      <div class="contact"><strong>Contact</strong></div>
       <p>If youre interested in chatting or want more information about what i've been working on, i'd love to hear from you!</p>
-
 
     <div class="personal">
       Phone <strong>+44 7769 516 204</strong><br>
       eMail <strong>edithraie@gmail.com</strong>
     </div>
-    </div>
+  </div>
 
 <hr>
 
-  <footer-nav>
-   <div class="container clearfix">
+  <div class="footer-nav">
     <h2 class="name">Edith Raie</h2>
+    <button class="button">
+    <li><a href="#top1">Back to Top</a></li>
+    </button>
     <ul class="nav">
       <li><a href="#home">Home</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#footer">Contact</a></li>
     </ul>
     </div>
-  </footer-nav>
-</main-footer>
+  </footer>
 
 </body>
 
