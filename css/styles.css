@@ -72,15 +72,16 @@ img {
 
 .main-header,
 .container,
-.banner {
-  align-items: center;
+.banner,
+.skills-banner {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
-.banner {
+.banner,
+.skills-banner {
 	width: auto;
 }
 
@@ -89,8 +90,14 @@ img {
 	font-size: 1.2em;
 }
 
-.feat-img {
+.skills-banner p {
+	text-align: center;
+}
+
+.feat-img,
+.hall-img {
 	width: auto;
+	max-height: 320px;
 }
 
 .main-header {
@@ -140,28 +147,31 @@ img {
 	padding: 30px;
 }
 
-/*--------footer section-----*/
-
-
 .personal {
-	margin: 10px;
-	padding: 30px;
 	font-size: 1em;
-	justify-content: space-around;
 	text-align: center;
+	align-self: center;
+	padding-left: 20px;
+}
 }
 
-.button{
-	float: right;
+/*--------footer section-----*/
+
+.name {
+	margin-top: 20px;
+}
+
+.button {
 	text-transform: uppercase;
 	font-weight: bold;
+	float: right;
 	border-style: hidden;
 	background-color: inherit;
 }
 
 .name,
 .button {
-	display: inline-grid;
+	display: inline-flex;
 	flex-direction: row;
 	font-family: inherit;
 	margin-top: 20px;
@@ -178,6 +188,28 @@ img {
 	justify-content: space-between;
 }
 
+/*-------------Skills section--------*/
+
+
+.skills-banner {
+		font-family: 'Liu Jian Mao Cao', cursive;
+		background-color: #ffcc99;
+		text-decoration: none;
+		border: 4px solid black;
+	}
+
+	.skills-banner  {
+		font-size: 1.2em;
+		text-align: left;
+		font-weight: bold;
+	}
+
+	.skills {
+		font-size: 1.5em;
+		text-decoration: underline;
+		text-align: center;
+	}
+
 /******************************
 Media Queries
 *******************************/
@@ -185,7 +217,8 @@ Media Queries
 @media (min-width: 320px) {
 
 	.container,
-	.banner {
+	.banner,
+	.skills-banner {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -200,7 +233,8 @@ Media Queries
 
 	.main-header,
 	.main-nav,
-	.banner {
+	.banner,
+	.skills-banner {
 		flex-wrap: wrap;
 		display: flex;
 	}
@@ -234,16 +268,22 @@ Media Queries
 		padding: 10px;
    }
 
-	 .main-footer {
-		 padding: 0 16%;
+	 .hall-img {
+		 width: 50%;
+		 float: left;
+		 padding: 10px;
 	 }
 
-	 .footer-nav {
-		 display: flex;
-		 flex-direction: row;
- 		 align-items: center;
- 		 justify-content: space-between;
-		 margin: 10px 20px;
+   .main-footer {
+		padding: 0 16%;
+	 }
+
+	.footer-nav {
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: space-between;
+	 margin: 10px 20px;
 	 }
 
 	 .button {
